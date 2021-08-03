@@ -8,7 +8,7 @@
 
 
 ######  1. MD5
-* Hash : 48bb6e862e54f2a795ffc4e541caed4d** 
+* Hash : 48bb6e862e54f2a795ffc4e541caed4d
 
 * Hint : MD5
 
@@ -19,7 +19,7 @@
 
 
 ######  2. SHA-1
-* Hash : CBFDAC6008F9CAB4083784CBD1874F76618D2A97** 
+* Hash : CBFDAC6008F9CAB4083784CBD1874F76618D2A97
 
 * Hint : Sha.. but which version 
 
@@ -30,7 +30,7 @@
 
 
 ######  3. SHA-256
-* Hash : 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032** 
+* Hash : 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032 
 
 * Hint : sha..
 
@@ -41,7 +41,7 @@
 
 
 ######  4. BCrypt 
-* Hash : $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom** 
+* Hash : $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom 
 
 * Hint : bcrypt
 
@@ -51,7 +51,7 @@ At the beginning of the hashed value, we can see the `$2y$`, this is a hash sign
 
 
 ######  5. MD4 
-* Hash : 279412f945939ba78ce0758d3fd83daa** 
+* Hash : 279412f945939ba78ce0758d3fd83daa 
 
 * Hint : MD4
 
