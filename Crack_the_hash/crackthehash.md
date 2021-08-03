@@ -17,6 +17,7 @@
 
 *Solution : easy*
 
+
 ######  2. SHA-1
 * Hash : CBFDAC6008F9CAB4083784CBD1874F76618D2A97** 
 
@@ -26,6 +27,7 @@
 
 
 *Solution : password123*
+
 
 ######  3. SHA-256
 * Hash : 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032** 
@@ -37,21 +39,22 @@
 
 *Solution : letmein*
 
+
 ######  4. BCrypt 
 * Hash : $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom** 
 
 * Hint : bcrypt
 
-At the beginning of the hashed value, we can see the `$2y$`, this is a hash signature and we can Google what hashing algorithm has this signature. We can find out that this is hashed using the bcrypt hashing algorithm. Again that password can be cracked using mode `-m 3200` in hashcat but it might take a lot of time. So, we can look up for some `online bcrypt cracking tools` like the one [here](https://www.onlinehashcrack.com/). We'll get the desired cracked value.
+At the beginning of the hashed value, we can see the `$2y$`, this is a hash signature and we can Google what hashing algorithm has this signature. We can find out that this is hashed using the bcrypt hashing algorithm. Again that password can be cracked using mode `-m 3200` in hashcat but it might take a lot of time. So, we can use some `online bcrypt cracking tools` like the one [here](https://www.onlinehashcrack.com/). As a result we'll get the desired cracked value.
 
 *Solution : bleh*
+
 
 ######  5. MD4 
 * Hash : 279412f945939ba78ce0758d3fd83daa** 
 
 * Hint : MD4
 
-``` root@busra:~$ hashcat -m 900 hash.txt /usr/share/wordlists/rockyou.txt --force```
-
+With hashcat, we can figure out that this hash appears to be MD5 but when we try to crack this hash with hashcat using the mode `-m 0`, the hash does not get cracked. So, we can use another online hash cracker over [here](https://crackstation.net/) and get the cracked hash value.
 
 *Solution : Eternity22*
