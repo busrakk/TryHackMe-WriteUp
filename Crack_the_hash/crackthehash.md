@@ -2,6 +2,7 @@
 
 * We can use ` hash-identifier `  to find the hashing algorithm.
 * Hashcat is a CLI password cracker that can be used in multiple platforms, which supports decryption on different hash types.
+
 ```hashcat -a <attack_mode> -m <hash_type> [path_to_hash_file] [path_to_dict_file]```
 
 ### [Task 1] Level 1
