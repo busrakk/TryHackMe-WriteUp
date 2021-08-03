@@ -3,7 +3,6 @@
 ### [Task 1] Level 1
 
 
-
 **1. 
 * Hash : 48bb6e862e54f2a795ffc4e541caed4d** 
 
