@@ -50,6 +50,17 @@ At the beginning of the hashed value, we can see the `$2y$`, this is a hash sign
 
 **Solution :** bleh
 
+######  5. MD4
+* Hash : 279412f945939ba78ce0758d3fd83daa 
+
+* Hint : MD4
+
+With hashcat, we can figure out that this hash appears to be MD5 but when we try to crack this hash with hashcat using the mode -m 0, the hash does not get cracked. So, we can use another online hash cracker over [here](https://www.onlinehashcrack.com/) and get the cracked hash value.
+
+
+**Solution :** Eternity22
+
+
 ### [Task 2] Level 2
 
 
