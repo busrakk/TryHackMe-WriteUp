@@ -50,12 +50,36 @@ At the beginning of the hashed value, we can see the `$2y$`, this is a hash sign
 
 **Solution :** bleh
 
+### [Task 2] Level 2
 
-######  5. MD4 
-* Hash : 279412f945939ba78ce0758d3fd83daa 
 
-* Hint : MD4
+######  1. SHA2-256 
+* Hash : F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
 
-With hashcat, we can figure out that this hash appears to be MD5 but when we try to crack this hash with hashcat using the mode `-m 0`, the hash does not get cracked. So, we can use another online hash cracker over [here](https://crackstation.net/) and get the cracked hash value.
+* Hint : SHA2-256 
 
-**Solution :** Eternity22
+**Solution :** paule
+
+
+######  2. NTLM 
+* Hash : 1DFECA0C002AE40B8619ECF94819CC1B
+
+* Hint : NTLM
+
+**Solution :** n63umy8lkf4i
+
+######  3. SHA-512, $6$ Salted Hash 
+* Hash : $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
+
+* Salt: aReallyHardSalt
+
+**Solution :** waka99
+
+######  4. HMAC-SHA1 
+* Hash : e5d8870e5bdd26602cab8dbe07a942c8669e56d6
+
+* Salt: tryhackme
+
+* Hint : HMAC-SHA1 
+
+**Solution :** 481616481616
