@@ -119,8 +119,8 @@ We can crack this hash using mode ```-m 1800 ``` in hashcat.
 
 
 We know that we are provided both the hash and salt. it must be by some way passed to the cracker in order to crack it in a proper way. So to do that there are two method:
- - ``` <password>:<hash> ```
- - ``` <hash>:<password> ```
+   ``` <password>:<hash> ```
+   ``` <hash>:<password> ```
 
 * HMAC-SHA1 (key=$salt) hashes can be cracked with hashcat using mode ``` -m 160.```
 
