@@ -2,7 +2,7 @@
 
 ### [Task 2] 
 
-#####  1. Use Hydra to bruteforce molly's web password. What is flag 1?
+###  1. Use Hydra to bruteforce molly's web password. What is flag 1?
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-##### 2. Use Hydra to bruteforce molly's SSH password. What is flag 2?
+### 2. Use Hydra to bruteforce molly's SSH password. What is flag 2?
 
 * We need SSH password. Command I used
 
