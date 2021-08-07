@@ -100,7 +100,8 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 * Hash : $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
 
 * Salt: aReallyHardSalt
-* We can crack this hash using mode ```-m 1800 ``` in hashcat.
+
+We can crack this hash using mode ```-m 1800 ``` in hashcat.
 
 ``` root@busra:~$ hashcat -m 1800 "\$6\$aReallyHardSalt\$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02." /usr/share/wordlists/rockyou.txt ```
 
@@ -117,9 +118,9 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 * Hint : HMAC-SHA1 
 
 
-* We know that we are provided both the hash and salt. it must be by some way passed to the cracker in order to crack it in a proper way. So to do that there are two method:
- ``` <password>:<hash> ```
- ``` <hash>:<password> ```
+We know that we are provided both the hash and salt. it must be by some way passed to the cracker in order to crack it in a proper way. So to do that there are two method:
+ - ``` <password>:<hash> ```
+ - ``` <hash>:<password> ```
 
 * HMAC-SHA1 (key=$salt) hashes can be cracked with hashcat using mode ``` -m 160.```
 
