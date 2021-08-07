@@ -8,7 +8,7 @@
 ### [Task 1] Level 1
 
 
-######  1. MD5
+#####  1. MD5
 * Hash : 48bb6e862e54f2a795ffc4e541caed4d
 
 * Hint : MD5
@@ -19,7 +19,8 @@
 **Solution :** easy
 
 
-######  2. SHA-1
+
+#####  2. SHA-1
 * Hash : CBFDAC6008F9CAB4083784CBD1874F76618D2A97
 
 * Hint : Sha.. but which version 
@@ -30,7 +31,8 @@
 **Solution :** password123
 
 
-######  3. SHA-256
+
+#####  3. SHA-256
 * Hash : 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032 
 
 * Hint : sha..
@@ -41,7 +43,8 @@
 **Solution :** letmein
 
 
-######  4. BCrypt 
+
+#####  4. BCrypt 
 * Hash : $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom 
 
 * Hint : bcrypt
@@ -50,7 +53,9 @@ At the beginning of the hashed value, we can see the `$2y$`, this is a hash sign
 
 **Solution :** bleh
 
-######  5. MD4
+
+
+#####  5. MD4
 * Hash : 279412f945939ba78ce0758d3fd83daa 
 
 * Hint : MD4
@@ -61,10 +66,12 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 **Solution :** Eternity22
 
 
+
 ### [Task 2] Level 2
 
 
-######  1. SHA-256 
+
+#####  1. SHA-256 
 * Hash : F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
 
 * Hint : SHA-256 
@@ -74,7 +81,9 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 **Solution :** paule
 
 
-######  2. NTLM 
+
+
+#####  2. NTLM 
 * Hash : 1DFECA0C002AE40B8619ECF94819CC1B
 
 * Hint : NTLM
@@ -85,7 +94,9 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 **Solution :** n63umy8lkf4i
 
 
-######  3. SHA-512, $6$ Salted Hash 
+
+
+#####  3. SHA-512, $6$ Salted Hash 
 * Hash : $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
 
 * Salt: aReallyHardSalt
@@ -96,16 +107,19 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 **Solution :** waka99
 
 
-######  4. HMAC-SHA1 
+
+
+#####  4. HMAC-SHA1 
 * Hash : e5d8870e5bdd26602cab8dbe07a942c8669e56d6
 
 * Salt: tryhackme
 
 * Hint : HMAC-SHA1 
 
+
 * We know that we are provided both the hash and salt. it must be by some way passed to the cracker in order to crack it in a proper way. So to do that there are two method:
-* ``` <password>:<hash> ```
-* ``` <hash>:<password> ```
+ ``` <password>:<hash> ```
+ ``` <hash>:<password> ```
 
 * HMAC-SHA1 (key=$salt) hashes can be cracked with hashcat using mode ``` -m 160.```
 
