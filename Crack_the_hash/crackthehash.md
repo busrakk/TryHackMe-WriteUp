@@ -102,7 +102,7 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 * Salt: aReallyHardSalt
 * We can crack this hash using mode ```-m 1800 ``` in hashcat.
 
-``` root@busra:~$ hashcat -m 1000 "\$6\$aReallyHardSalt\$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02." /usr/share/wordlists/rockyou.txt ```
+``` root@busra:~$ hashcat -m 1800 "\$6\$aReallyHardSalt\$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02." /usr/share/wordlists/rockyou.txt ```
 
 **Solution :** waka99
 
