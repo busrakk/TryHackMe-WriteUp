@@ -64,10 +64,12 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 ### [Task 2] Level 2
 
 
-######  1. SHA2-256 
+######  1. SHA-256 
 * Hash : F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
 
-* Hint : SHA2-256 
+* Hint : SHA-256 
+
+``` root@busra:~$ hashcat -m 1400 hash.txt /usr/share/wordlists/rockyou.txt --force```
 
 **Solution :** paule
 
@@ -76,6 +78,9 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 * Hash : 1DFECA0C002AE40B8619ECF94819CC1B
 
 * Hint : NTLM
+* NTLM hashes can be cracked with hashcat using mode ``` -m 1000.```
+
+``` root@busra:~$ hashcat -m 1000 hash.txt /usr/share/wordlists/rockyou.txt --force```
 
 **Solution :** n63umy8lkf4i
 
@@ -83,6 +88,9 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 * Hash : $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
 
 * Salt: aReallyHardSalt
+* We can crack this hash using mode ```-m 1800 ``` in hashcat.
+
+``` root@busra:~$ hashcat -m 1000 "\$6\$aReallyHardSalt\$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02." /usr/share/wordlists/rockyou.txt ```
 
 **Solution :** waka99
 
@@ -92,5 +100,10 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 * Salt: tryhackme
 
 * Hint : HMAC-SHA1 
+``` * <password>:<hash> ```
+``` * <hash>:<password> ```
+* HMAC-SHA1 (key=$salt) hashes can be cracked with hashcat using mode ``` -m 160.```
+
+``` root@busra:~$ hashcat -m 160 hash.txt /usr/share/wordlists/rockyou.txt ```
 
 **Solution :** 481616481616
