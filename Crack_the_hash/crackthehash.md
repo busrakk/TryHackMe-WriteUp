@@ -84,6 +84,7 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 
 **Solution :** n63umy8lkf4i
 
+
 ######  3. SHA-512, $6$ Salted Hash 
 * Hash : $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
 
@@ -94,14 +95,18 @@ With hashcat, we can figure out that this hash appears to be MD5 but when we try
 
 **Solution :** waka99
 
+
 ######  4. HMAC-SHA1 
 * Hash : e5d8870e5bdd26602cab8dbe07a942c8669e56d6
 
 * Salt: tryhackme
 
 * Hint : HMAC-SHA1 
-``` * <password>:<hash> ```
-``` * <hash>:<password> ```
+
+* We know that we are provided both the hash and salt. it must be by some way passed to the cracker in order to crack it in a proper way. So to do that there are two method:
+* ``` <password>:<hash> ```
+* ``` <hash>:<password> ```
+
 * HMAC-SHA1 (key=$salt) hashes can be cracked with hashcat using mode ``` -m 160.```
 
 ``` root@busra:~$ hashcat -m 160 hash.txt /usr/share/wordlists/rockyou.txt ```
