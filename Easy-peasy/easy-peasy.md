@@ -4,11 +4,9 @@
 
 
 #####  1. How many ports are open?
-* Scan open ports ```nmap -p- -sS 10.10.194.164```
+* Scan open port 
 
-
-``` root@busra:~$ hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt --force```
-
+```root@busra:~$ nmap -p- -sS 10.10.194.164```
 
 **Solution :** 
 
