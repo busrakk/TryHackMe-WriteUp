@@ -61,3 +61,35 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 /whatever             (Status: 301) [Size: 169] [--> http://10.10.194.164/hidden/whatever/]
 
 ```
+* ```http://10.10.194.164/hidden/whatever/ ``` When we visit this url, we get another page with image. When we view the source code we find something.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>dead end</title>
+<style>
+    body {
+	background-image: url("https://cdn.pixabay.com/photo/2015/05/18/23/53/norway-772991_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<center>
+<p hidden>ZmxhZ3tmMXJzN19mbDRnfQ==</p>
+</center>
+</body>
+</html>
+```
+
+* The hidden text, looks like a base64 encoded string.
+* The command I used to decrypt this hash is: 
+
+``` echo "ZmxhZ3tmMXJzN19mbDRnfQ==" | base64 -d  ```
+
+**Solution :** flag{f1rs7_fl4g}
