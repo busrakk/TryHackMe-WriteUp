@@ -7,11 +7,14 @@
 * Scan open port 
 
 ```root@busra:~$ nmap -p- -sS -sV 10.10.194.164```
-```PORT      STATE SERVICE VERSION
+```
+PORT      STATE SERVICE VERSION
 80/tcp    open  http    nginx 1.16.1
 6498/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu))
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel```
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+```
 
 
 **Solution :** 
