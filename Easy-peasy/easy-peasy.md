@@ -5,8 +5,10 @@
 
 #####  1. How many ports are open?
 * Scan open port 
+* -sV : Version detection
+* -p- : All ports to scan
 
-```root@busra:~$ nmap -p- -sS -sV 10.10.194.164```
+```root@busra:~$ nmap -p- -sV 10.10.194.164```
 ```
 PORT      STATE SERVICE VERSION
 80/tcp    open  http    nginx 1.16.1
@@ -22,16 +24,10 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 #####  2. What is the version of nginx?
 
-``` root@busra:~$ ```
-
-
 **Solution :** 1.16.1
 
 
 #####  3. What is running on the highest port?
-
-``` root@busra:~$ ```
-
 
 **Solution :** Apache
 
@@ -41,6 +37,8 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 #####  1. Using GoBuster, find flag 1.
 * Gobuster allows us to find hidden web directories running on port 80.
+* -u : URL
+* -w : Wordlist
 
 ```root@busra:~$ gobuster dir -u 10.10.194.164 -w /usr/share/dirb/wordlists/common.txt```
 
@@ -49,5 +47,17 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 /hidden               (Status: 301) [Size: 169] [--> http://10.10.194.164/hidden/]
 /index.html           (Status: 200) [Size: 612]                                   
 /robots.txt           (Status: 200) [Size: 43]                                    
+
+```
+
+* We have a directory /hidden to check out as well as robots.txt file is also available for having a look
+* When we visit the /hidden directory, we see nothing but an image. “View source” gets us no further… 
+* Look into ```/hidden``` directory we discovered in gobuster.
+
+```root@busra:~$ gobuster dir --url http://10.10.194.164/hidden --wordlist /usr/share/dirb/wordlists/common.txt ```
+
+```
+/index.html           (Status: 200) [Size: 390]
+/whatever             (Status: 301) [Size: 169] [--> http://10.10.194.164/hidden/whatever/]
 
 ```
