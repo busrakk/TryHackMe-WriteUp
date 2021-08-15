@@ -90,6 +90,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 * The hidden text, looks like a base64 encoded string.
 * The command I used to decrypt this hash is: 
 
-``` echo "ZmxhZ3tmMXJzN19mbDRnfQ==" | base64 -d  ```
+``` root@busra:~$ echo "ZmxhZ3tmMXJzN19mbDRnfQ==" | base64 -d  ```
 
 **Solution :** flag{f1rs7_fl4g}
