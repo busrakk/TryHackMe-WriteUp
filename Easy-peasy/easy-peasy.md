@@ -93,3 +93,33 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ``` root@busra:~$ echo "ZmxhZ3tmMXJzN19mbDRnfQ==" | base64 -d  ```
 
 **Solution :** flag{f1rs7_fl4g}
+
+
+#####  2. Further enumerate the machine, what is flag 2?
+* For the second flag, we will use the other web service running on port 65524/tcp.
+* We're doing another gobuster scan on this site. 
+
+``` root@busra:~$ gobuster dir --url http://10.10.194.164:65524 --wordlist /usr/share/dirb/wordlists/common.txt ```
+
+```
+/index.html           (Status: 200) [Size: 10818]
+/robots.txt           (Status: 200) [Size: 153]  
+/server-status        (Status: 403) [Size: 281]  
+
+```
+
+* There is a robots.txt file that discloses a hash. 
+* ```http://10.10.194.164:65524/robots.txt``` 
+* Let us look into the source code to find any information or comments.
+
+ ```
+ User-Agent:*
+Disallow:/
+Robots Not Allowed
+User-Agent:a18672860d0510e5ab6699730763b250
+Allow:/
+This Flag Can Enter But Only This Flag No More Exceptions
+ ```
+* Using online resources, we can crack the hash.
+
+**Solution :** flag{1m_s3c0nd_fl4g}
