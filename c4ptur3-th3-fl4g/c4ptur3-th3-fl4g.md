@@ -70,6 +70,17 @@ root@busra:~$ echo "RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBv
 68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f
 ```
 
+* This encryption has two different names: hex and base16. 
+* The way you can tell it’s in hex is the spacing between each couplet and the character set, that is 0–9 then a-f, adding to 16.
+* We can use some `online decode` like the one [here](https://www.rapidtables.com/convert/number/hex-to-ascii.html) or we can easily decode this text via terminal. 
+* We convert lowercase hex to ASCII using xxd. We combine the options -p and -r together for xxd and we can get the ASCII string.
+* The command I use in terminal:
+
+``` 
+root@busra:~$ echo "68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f" | xxd -r -p
+```
+![image](https://user-images.githubusercontent.com/62840507/129718781-7d1cb7e2-5823-494c-9d87-366ea689bd57.png)
+
 **Solution :** hexadecimal or base16?
 
 
