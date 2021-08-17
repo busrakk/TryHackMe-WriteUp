@@ -6,7 +6,7 @@
 #####  1. Leet Conventer
 
 * The first question is a ciphertext related to leet encryption. 
-* we can guess the answer easily or So, we can use some `online converter` like the one [here](http://www.robertecker.com/hp/research/leet-converter.php). As a result we'll get the desired cracked value.
+* We can guess the answer easily or So, we can use some `online converter` like the one [here](http://www.robertecker.com/hp/research/leet-converter.php).
 
 * c4n y0u c4p7u23 7h3 f149?
 
