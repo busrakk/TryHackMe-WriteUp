@@ -3,7 +3,9 @@
 ### [Task 1] Translation & Shifting 
 
 
-#####  1. 
+#####  1. Leet Conventer
+
+*The first question is a ciphertext related to leet encryption. 
 * c4n y0u c4p7u23 7h3 f149?
 
 **Solution :** can you  capture the flag
