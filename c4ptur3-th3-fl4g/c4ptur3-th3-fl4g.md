@@ -128,7 +128,7 @@ Ebgngr zr 13 cynprf!
 ```
 
 * This type of encryption is BCD.
-* We can solve this encryption type by looking at the ASCII table, or we can do this with [online] tools.(https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html)
+* We can solve this encryption type by looking at the ASCII table, or we can do this with [online](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html) tools.
  
 **Solution :** Unpack this BCD
 
