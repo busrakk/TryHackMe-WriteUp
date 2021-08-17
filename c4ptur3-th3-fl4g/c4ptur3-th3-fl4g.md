@@ -15,19 +15,30 @@ c4n y0u c4p7u23 7h3 f149?
 **Solution :** can you  capture the flag?
 
 
-#####  2. 
+#####  2. Binary
 
 ```
 01101100 01100101 01110100 01110011 00100000 01110100 01110010 01111001 00100000 01110011 01101111 01101101 01100101 00100000 01100010 01101001 01101110 01100001 01110010 01111001 00100000 01101111 01110101 01110100 00100001
 ```
+* We can do the solution by decoding the given binary code with `online converters` like the one [here](https://www.rapidtables.com/convert/number/binary-to-ascii.html).
 
 **Solution :** lets try some binary out!
 
 
-#####  3. 
+#####  3. Base32
 ```
 MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======
 ```
+
+* In the third question, there is a text encrypted with base32. 
+* It consists of 32-char set. 
+* These char-sets are usually alphabet in uppercase.
+* We can use some `online decode` like the one [here](https://emn178.github.io/online-tools/base32_decode.html).
+* We can easily decode this text via terminal. The command I use in terminal: 
+
+``` root@busra:~$ echo "MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======" | base32 -d```
+
+![image](https://user-images.githubusercontent.com/62840507/129717449-6beac9f9-63f5-44a6-9c57-7d9536292b98.png)
 
 **Solution :** base32 is super common in CTF's
 
