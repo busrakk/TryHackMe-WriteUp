@@ -1,10 +1,5 @@
 # c4ptur3-th3-fl4g
 
-* We can use ` hash-identifier `  to find the hashing algorithm.
-* Hashcat is a CLI password cracker that can be used in multiple platforms, which supports decryption on different hash types.
-
-```hashcat -a <attack_mode> -m <hash_type> [path_to_hash_file] [path_to_dict_file]```
-
 ### [Task 1] Translation & Shifting 
 
 
@@ -55,10 +50,7 @@
 **Solution :** You spin me right round baby right round (47 times)
 
 #####  8. 
-*   - . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -.
-
-   . -. -.-. --- -.. .. -. --.
-
+* ![image](https://user-images.githubusercontent.com/62840507/129711870-23b76091-fde4-482e-8d69-7f23e1ebb979.png)
 
 **Solution :** telecommunication ecoding 
 
