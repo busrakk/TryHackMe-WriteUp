@@ -36,22 +36,36 @@ MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======
 * We can use some `online decode` like the one [here](https://emn178.github.io/online-tools/base32_decode.html).
 * We can easily decode this text via terminal. The command I use in terminal: 
 
-``` root@busra:~$ echo "MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======" | base32 -d```
+``` 
+root@busra:~$ echo "MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======" | base32 -d
+```
 
 ![image](https://user-images.githubusercontent.com/62840507/129717449-6beac9f9-63f5-44a6-9c57-7d9536292b98.png)
 
 **Solution :** base32 is super common in CTF's
 
 
-#####  4. 
+#####  4. Base64
 ```
 RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBvZiBkYXRhLg==
 ```
+* This question, there is a text encrypted with base64 . 
+* It consists of 64-char set. 
+* These char-sets are usually alphabet in uppercase and lowercase.
+* We can use some `online decode` like the one [here](https://www.base64decode.org/) or we can easily decode this text via terminal. 
+* The command I use in terminal: 
+
+``` 
+root@busra:~$ echo "RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBvZiBkYXRhLg==" | base64 -d
+```
+
+![image](https://user-images.githubusercontent.com/62840507/129718197-c45bd25b-a945-4c86-af37-dc053f24b22a.png)
+
 
 **Solution :** Each Base64 digit represents exactly 6 bits of data.
 
 
-#####  5. 
+#####  5. Hex String
 ```
 68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f
 ```
