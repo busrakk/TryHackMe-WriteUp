@@ -65,7 +65,10 @@ Ebgngr zr 13 cynprf!
 
 #####  8. 
 ```
-![image](https://user-images.githubusercontent.com/62840507/129711870-23b76091-fde4-482e-8d69-7f23e1ebb979.png)
+- . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -.
+
+. -. -.-. --- -.. .. -. --.
+
 ```
 
 **Solution :** telecommunication ecoding 
