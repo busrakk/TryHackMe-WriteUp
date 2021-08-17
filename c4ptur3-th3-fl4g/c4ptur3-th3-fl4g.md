@@ -84,22 +84,29 @@ root@busra:~$ echo "68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 
 **Solution :** hexadecimal or base16?
 
 
-#####  6. 
+#####  6. ROT13
 ```
 Ebgngr zr 13 cynprf!
 ```
 
+* This password is more complex like rot13, but special characters are also involved. 
+* Rot 13 or known as rotate 13 is a form of Caesar cipher which rotate in 13 times.
+* We can do the solution [online.](https://rot13.com/). 
+
 **Solution :** Rotate me 13 places!
 
 
-#####  7. 
+#####  7. Rot 47
 ```
 *@F DA:? >6 C:89E C@F?5 323J C:89E C@F?5 Wcf E:>6DX
 ```
 
+* Rot 47 or known as rotate 47 is another form of Caesar cipher which rotate in 47 times.
+* We can do the solution [online.](https://www.dcode.fr/rot-47-cipher).
+
 **Solution :** You spin me right round baby right round (47 times)
 
-#####  8. 
+#####  8. Morse Code
 ```
 - . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -.
 
@@ -107,19 +114,31 @@ Ebgngr zr 13 cynprf!
 
 ```
 
+* Morse code is a combination of signal made of short and long impulsion (dot and dash). 
+* It was designed for telecommunication.
+* In the eighth question, there is a text encrypted with morse code. 
+* The solution can be done [online.](http://www.unit-conversion.info/texttools/morse-code/) 
+
 **Solution :** telecommunication ecoding 
 
 
-#####  9. 
+#####  9. BCD to ASCII
 ```
 85 110 112 97 99 107 32 116 104 105 115 32 66 67 68
 ```
 
+* This type of encryption is BCD.
+* We can solve this encryption type by looking at the ASCII table, or we can do this with [online] tools.(https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html)
+ 
 **Solution :** Unpack this BCD
 
 
-#####  10. 
+#####  10. Multiple cipher
+
 ```
 ```
 
+* In the tenth question, a very long ciphertext is given. 
+* In deciphering this text, we will decrypt several different encryptions in a few steps.
+* 
 **Solution :** 
