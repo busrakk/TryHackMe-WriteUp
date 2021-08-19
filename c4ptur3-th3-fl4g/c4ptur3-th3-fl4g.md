@@ -142,3 +142,17 @@ Ebgngr zr 13 cynprf!
 * In deciphering this text, we will decrypt several different encryptions in a few steps.
 * 
 **Solution :** 
+
+
+### [Task 2] Spectrograms 
+
+
+#####  1. Leet Conventer
+
+* A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time. When applied to an audio signal, spectrograms are sometimes called sonographs, voiceprints, or voicegrams. When the data is represented in a 3D plot they may be called waterfalls.
+* I used the Sonic Visualizer application for this solution. 
+
+![Spectrograms](https://user-images.githubusercontent.com/62840507/130035670-bfe64654-96e5-4175-a34c-16fe0083288a.png)
+
+
+**Solution :** Super Secret Message
