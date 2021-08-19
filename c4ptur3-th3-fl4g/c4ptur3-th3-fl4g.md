@@ -169,11 +169,10 @@ Ebgngr zr 13 cynprf!
 steghide --extract -sf stegosteg.jpg 
 ```
 
-* Extracted the data to a file named steganopayload2248.txt. We can open it with the cat command and read it. We don't need to type anything with a null character password.
-
 ![image](https://user-images.githubusercontent.com/62840507/130039106-9c076582-8148-4748-92dd-5cf460628202.png)
 
 
+* Extracted the data to a file named steganopayload2248.txt. We can open it with the cat command and read it. We don't need to type anything with a null character password.
 * This task can also be solved with an [online](https://futureboy.us/stegano/decinput.html) tool. 
 
 
