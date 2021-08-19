@@ -166,7 +166,7 @@ Ebgngr zr 13 cynprf!
 * The command I use for this task:
 
 ```
-steghide --extract -sf stegosteg.jpg 
+root@busra:~$ steghide --extract -sf stegosteg.jpg 
 ```
 
 ![image](https://user-images.githubusercontent.com/62840507/130039106-9c076582-8148-4748-92dd-5cf460628202.png)
@@ -177,3 +177,31 @@ steghide --extract -sf stegosteg.jpg
 
 
 **Solution :** SpaghettiSteg
+
+
+### [Task 4]  Security through obscurity 
+
+* Security through obscurity is the reliance in security engineering on the secrecy of the design or implementation as the main method of providing security for a system or component of a system.
+* The strings command allows you to see the Alphabetically meaningful character groups contained in these binary files. That's why we look at the values with the strings command. This way we find both flags as plain text. 
+
+
+![image](https://user-images.githubusercontent.com/62840507/130041365-887ae856-298b-42e9-bb2f-deac316598e0.png)
+
+* This task can also be solved with an [online](https://29a.ch/photo-forensics/#forensic-magnifier) tool.
+
+![image](https://user-images.githubusercontent.com/62840507/130042440-1722e52f-3661-428c-a579-a40f432ef082.png)
+
+
+#####  1. Download and get 'inside' the file. What is the first filename & extension?
+
+* The command I use for this task:
+```
+root@busra:~$ strings meme.jpg
+```
+
+**Solution :** hackerchat.png
+
+
+#####  2. Get inside the archive and inspect the file carefully. Find the hidden text.
+
+**Solution :** AHH_YOU_FOUND_ME!
