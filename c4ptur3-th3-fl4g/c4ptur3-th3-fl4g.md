@@ -146,9 +146,6 @@ Ebgngr zr 13 cynprf!
 
 ### [Task 2] Spectrograms 
 
-
-#####  1. Leet Conventer
-
 * A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time. When applied to an audio signal, spectrograms are sometimes called sonographs, voiceprints, or voicegrams. When the data is represented in a 3D plot they may be called waterfalls.
 * I used the Sonic Visualizer application for this solution. 
 
@@ -156,3 +153,13 @@ Ebgngr zr 13 cynprf!
 
 
 **Solution :** Super Secret Message
+
+
+### [Task 3] Spectrograms 
+
+* Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video.
+* In this task we are given a photo and we will use the steghide tool to find the hidden txt in this photo. 
+* This task can also be solved with an [online](https://futureboy.us/stegano/decinput.html) tool. 
+
+
+**Solution :** SpaghettiSteg
