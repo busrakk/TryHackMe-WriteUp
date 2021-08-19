@@ -195,7 +195,7 @@ root@busra:~$ strings meme.jpg
 
 * This task can also be solved with an [online](https://29a.ch/photo-forensics/#forensic-magnifier) tool.
 
-![image](https://user-images.githubusercontent.com/62840507/130042440-1722e52f-3661-428c-a579-a40f432ef082.png)
+![image](https://user-images.githubusercontent.com/62840507/130043020-5dcc2349-95f2-4e65-95a4-9d910da8d760.png)
 
 
 #####  1. Download and get 'inside' the file. What is the first filename & extension?
