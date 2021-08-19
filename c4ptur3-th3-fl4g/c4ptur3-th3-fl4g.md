@@ -179,10 +179,16 @@ root@busra:~$ steghide --extract -sf stegosteg.jpg
 **Solution :** SpaghettiSteg
 
 
+
 ### [Task 4]  Security through obscurity 
 
 * Security through obscurity is the reliance in security engineering on the secrecy of the design or implementation as the main method of providing security for a system or component of a system.
 * The strings command allows you to see the Alphabetically meaningful character groups contained in these binary files. That's why we look at the values with the strings command. This way we find both flags as plain text. 
+
+* The command I use for this task:
+```
+root@busra:~$ strings meme.jpg
+```
 
 
 ![image](https://user-images.githubusercontent.com/62840507/130041365-887ae856-298b-42e9-bb2f-deac316598e0.png)
@@ -193,11 +199,6 @@ root@busra:~$ steghide --extract -sf stegosteg.jpg
 
 
 #####  1. Download and get 'inside' the file. What is the first filename & extension?
-
-* The command I use for this task:
-```
-root@busra:~$ strings meme.jpg
-```
 
 **Solution :** hackerchat.png
 
