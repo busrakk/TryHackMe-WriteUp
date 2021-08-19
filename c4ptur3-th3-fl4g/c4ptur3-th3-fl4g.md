@@ -141,7 +141,7 @@ Ebgngr zr 13 cynprf!
 * In the tenth question, a very long ciphertext is given. 
 * In deciphering this text, we will decrypt several different encryptions in a few steps.
 
-* Cipher1: Base64
+- Cipher1: Base64
 * Cipher2: Morse code
 * Cipher3: Binary to ASCII
 * Cipher4: ROT 47
