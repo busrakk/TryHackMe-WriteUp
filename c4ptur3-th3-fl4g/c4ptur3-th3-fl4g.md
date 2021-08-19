@@ -158,7 +158,22 @@ Ebgngr zr 13 cynprf!
 ### [Task 3] Spectrograms 
 
 * Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video.
+
 * In this task we are given a photo and we will use the steghide tool to find the hidden txt in this photo. 
+* --extract: extract, output data 
+* -sf: –stegofile, hidden data 
+
+* The command I use for this task:
+
+```
+steghide --extract -sf stegosteg.jpg 
+```
+
+* Extracted the data to a file named steganopayload2248.txt. We can open it with the cat command and read it. We don't need to type anything with a null character password.
+
+![image](https://user-images.githubusercontent.com/62840507/130039106-9c076582-8148-4748-92dd-5cf460628202.png)
+
+
 * This task can also be solved with an [online](https://futureboy.us/stegano/decinput.html) tool. 
 
 
